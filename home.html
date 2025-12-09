@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+     
+  </head>
+  <body>
+    <header>
+      <div>
+        <ul class="tab1" id="tab1">
+          <li class="li1">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="li1">
+            <a href="game.html">Game</a>
+          </li>
+          <li class="li1">
+            <a href="news.html">News</a>
+          </li>
+          <li class="li1">
+            <a href="video.html">Video</a>
+          </li>
+          <li>
+            <div class="dropdown1">
+              <a style="color: aliceblue">Sport</a>
+              <div class="dropdown1-content">
+                <a href="cricket.html">Cricket</a>
+                <a href="footBall.html">Football</a>
+                <a href="tenis.html">Tenis</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <br/>
+
+    <div>
+      <img class="mySlides" src="image/b.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/d.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/c.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/e.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/dd.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/ee.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/cc.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/ff.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/p.jpg" width="1510px" height="600" />
+      <img class="mySlides" src="image/s.jpg" width="1510px" height="600" />
+      <button class="button black display-left" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <button class="button black display-right" onclick="plusDivs(1)">
+        &#10095;
+      </button>
+    </div><br><br>
+    <from>
+      <div class="form-con1">
+        <label class="font">Name :</label>  <input type="text" class="form-con" placeholder="Enter Name">
+        <label class="font" >Nic :</label> <input type="text" class="form-con" placeholder="Enter NIC">
+       <label class="font">Mobile : </label><input type="text" class="form-con" placeholder="Enter Mobile">
+       <label class="font">Address : </label><input type="text" class="form-con" placeholder="Enter Address">
+       <label class="font">Email : </label><input type="text" class="form-con" placeholder="Enter Email"><br>
+      <div>
+        <button type="submit" class="bttn bttn-primary">Register</button>
+        <button type="reset" class="bttn bttn-info">Cacle</button>
+
+      </div>
+    </div>
+    </from>
+
+  <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
