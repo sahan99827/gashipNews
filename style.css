@@ -2,17 +2,17 @@
 .tab1 li{display:inline;}
 .tab1>li>a{text-decoration: none;color: aliceblue !important;padding: 10px 14px;}
 #tab3>li>a{text-decoration: none;color: rgb(245, 18, 18) !important;padding: 10px 14px;} 
-#tab1{border: none;height: 35px; width: 1468px;background-color: rgba(251, 31, 6, 0.566)!important; margin-bottom: -10px;
+#tab1{border: none;height: 35px; width: auto;background-color: rgba(251, 31, 6, 0.566)!important; margin-bottom: -10px;
       margin-top: -8px;margin-left: -8px;margin-right: 0px;padding-top: 14px;padding-left: 50px;}
-#tab2{border: none;height: 35px;width: 1486px;background-color: rgba(6, 100, 251, 0.496)!important;margin-bottom: -10px;
+#tab2{border: none;height: 35px;width: auto;background-color: rgba(6, 100, 251, 0.496)!important;margin-bottom: -10px;
       margin-top: -8px;margin-left: -8px;margin-right: 0px;padding-top: 14px;padding-left: 50px;}
-#tab3{border: none;height: 35px;width: 1486px;background-color: rgb(251, 239, 6)!important;margin-bottom: -10px;
+#tab3{border: none;height: 35px;width: auto;background-color: rgb(251, 239, 6)!important;margin-bottom: -10px;
       margin-top: -8px;margin-left: -8px;margin-right: 0px;padding-top: 14px;padding-left: 50px;}
-#tab4{border: none;height: 35px;width: 1486px;background-color: rgb(6, 31, 251) !important;margin-bottom: -10px; 
+#tab4{border: none;height: 35px;width: auto;background-color: rgb(6, 31, 251) !important;margin-bottom: -10px; 
       margin-top: -8px;margin-left: -8px;margin-right: 0px;padding-top: 14px;padding-left: 50px;} 
 .li1{margin-top: 0px;margin-left: 20px;margin-right: 15px;margin-bottom: 10px;}    
 /* Navbar*/
-.topnav {overflow: hidden;background-color: #333; height: 35px; width: 1536px;margin-bottom: -10px;
+.topnav {overflow: hidden;background-color: #333; height: 35px; width: auto;margin-bottom: -10px;
   margin-top: -8px;margin-left: -8px;margin-right: 0px;}
 .topnav a {float: left;color: #f2f2f2;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;}
 .topnav a:hover {background-color: #ddd;color: black;}
@@ -61,8 +61,7 @@ li a:hover, .dropdown1:hover .dropbtn1 {background-color: rgba(0, 255, 0, 0.09);
 .bttn-dark:hover{color:#fff  !important;background-color:#23272b8e  !important;border-color:#1d2124ab  !important}
 .bttn-light{color:#212529 !important;background-color:#f8f9fa !important;border-color:#f8f9fa !important}
 .bttn-light:hover{color:#21252962 !important;background-color:#cbcfd2 !important;border-color:#cbccce !important}
-
-
+.slider img{width:100%; height: 800px;}
 
 
 
