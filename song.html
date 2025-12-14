@@ -18,5 +18,41 @@
       <div>
         <h1>Songs</h1>
       </div>
+
+        <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2>CodeHelio</h2>
+        <p>Building modern web solutions with passion.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li> <a href="home.html">Home</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li> <a href="news.html">News</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: info@codehelio.com</p>
+        <p>Location: Sri Lanka</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p id="year"></p>
+    </div>
+  </footer>
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById("year").innerText =
+      `© ${year} CodeHelio. All Rights Reserved.`;
+  </script>
 </body>
 </html>
