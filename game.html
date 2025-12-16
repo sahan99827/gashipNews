@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Game</title>
-    
-</head>
-<body>
-        <div>
+
+  </head>
+  <body>
+    <div>
       <ul class="tab1" id="tab2">
         <li class="li1">
-            <a href="home.html">Home</a>
-          </li>   
+          <a href="home.html">Home</a>
+        </li>
         <li class="li1">
           <a href="#">Game</a>
         </li>
@@ -24,7 +24,7 @@
           <a href="video.html+
           ">Video</a>
         </li>
-       <li><a href="contact.html">Contact</a> </li> 
+        <li><a href="contact.html">Contact</a> </li>
         <li>
           <div class="dropdown1">
             <a style="color: aliceblue">Sport</a>
@@ -39,12 +39,66 @@
     </div>
     <br />
 
-    <div class="content section "  style="max-width:500px">
-        <img class="mySlides1" src="image/f.jpg" style="width:100%">
-        <img class="mySlides1" src="image/g.jpg" style="width:100%">
-        <img class="mySlides1" src="image/h.jpg" style="width:100%">
+    <div class="content section " style="max-width:500px">
+      <img class="mySlides1" src="image/f.jpg" style="width:100%">
+      <img class="mySlides1" src="image/g.jpg" style="width:100%">
+      <img class="mySlides1" src="image/h.jpg" style="width:100%">
     </div>
+
+  <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-section">
+          <h2>CodeHelio</h2>
+          <p>Building modern web solutions with passion.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li> <a href="#">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li> <a href="news.html">News</a></li>
+            <li><a href="video.html">Video</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Vedio Links</h3>
+          <ul>
+            <li> <a href="song.html">Song</a></li>
+            <li> <a href="film.html">Film</a></li>
+            <li> <a href="sport.html">Sport</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Sport Links</h3>
+          <ul>
+            <li> <a href="cricket.html">Cricket</a></li>
+            <li> <a href="footBall.html">FootBall</a></li>
+            <li> <a href="tenis.html">Tenis</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@codehelio.com</p>
+          <p>Location: Sri Lanka</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p id="year"></p>
+      </div>
+    </footer>
     <script>
+    const year = new Date().getFullYear();
+    document.getElementById("year").innerText =
+      `© ${year} CodeHelio. All Rights Reserved.`;
+  
         var myIndex = 0;
         carousel();
         
@@ -60,5 +114,5 @@
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
     </script>
-</body>
+  </body>
 </html>
